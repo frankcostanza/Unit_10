@@ -1,0 +1,157 @@
+
+body {
+    background-color: rgba(0, 26, 16, 0.1);
+}
+
+header {
+    padding: 1rem 0 2rem 1rem;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.profile {
+
+}
+
+.frame {
+    padding: 20px 20px 40px 20px;
+    border: 2px grey solid;
+    border-radius: 5%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    list-style: none;
+    width: 100%;
+    background-color: white;
+    font-family: 'Spirax', cursive;
+
+}
+
+.frame:hover {
+    background-color: rgba(246, 250, 242, 0.2);
+    transition: 0.4s ease-in;
+}
+
+.image {
+    border: 1px solid;
+    border-radius: 100%;
+    height: 8rem;
+    width: 8rem;
+}
+
+.float {
+
+    float: left;
+
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: grey;
+    padding-bottom: 0.8rem;
+}
+
+.text {
+    padding-bottom: 0.8rem;
+    font-size: 0.825rem;
+}
+
+/*MODAL BOX */
+.overlay {
+    text-align: center;
+    border: 2px grey solid;
+    border-radius: 5%;
+    display: inline-block;
+    padding: 3rem 3rem;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    left: 150px;
+}
+
+.overlay-frame {
+    position: relative;
+}
+
+#close-button {
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+}
+
+.close-button:after {
+    content: 'x';
+    float: right;
+    color: black;
+    padding-left: 12px;
+}
+
+/*HELPER CLASSES */
+
+.float {
+    float: left;
+}
+
+.text-frame {
+    display: inline-block;
+    padding-left: 0.825rem;
+    padding-top: .625rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.border {
+    border-bottom: 1px grey solid;
+    margin-bottom: 0.5rem;
+    display: block;
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+}
+
+@media (min-width: 580px) {
+
+    .overlay {
+        left: 150px;
+    }
+}
+
+@media (min-width: 900px) {
+
+    .frame {
+        width: 45%;
+        float: left;
+        padding-bottom: 20px;
+    }
+
+    .overlay {
+        left: 370px;
+
+    }
+}
+
+@media (min-width: 1295px) {
+
+    .frame {
+        width: 30%;
+    }
+
+    .frame:nth-child(3n+1) {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .overlay {
+        left: 610px;
+
+    }
+
+}
